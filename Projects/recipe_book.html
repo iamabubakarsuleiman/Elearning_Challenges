@@ -5,30 +5,350 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Recipe Book</title>
     <style>
+      /* Body styling */
       body {
-        body {
-          background-color: rgb(
-            240,
-            248,
-            255
-          ); /* Light sky blue for a soft contrast */
-          color: rgb(34, 34, 34); /* Dark grey for main text */
-          font-family: Arial, sans-serif;
-        }
+        background-color: rgb(245, 241, 236);
+        color: rgb(34, 34, 34); /* Dark grey for main text */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      /* Header styling */
+      header {
+        background-color: rgb(242, 142, 28);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .toc {
+        background-color: rgb(245, 225, 210);
+        padding: 10px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+      .toc a {
+        color: #f28e1c;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      /* Table Styling */
+      th {
+        background-color: rgb(242, 142, 38);
+        color: rgb(255, 255, 255);
+        padding: 8px;
+      }
+      td {
+        border: 1px black solid;
+        padding: 8px;
+        text-align: left;
+      }
+      .recipe {
+        border: 2px rgb(242, 142, 28) solid;
+        margin: 40px 0px;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      /* Link to top styling */
+      .top_link {
+        text-align: right;
+      }
+      .top_link a {
+        color: rgb(242, 142, 38);
+        font-weight: bold;
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
     <header>
-      <ul>
-        <li>Nigeria Jollof Rice</li>
-        <li>Spaghetti Bolognese</li>
-        <li>Grilled Chicken Salad</li>
-        <li>Fried Rice</li>
-        <li>Rice and Stew</li>
-        <li>Vegetable Soup (Nigerian Style)</li>
-      </ul>
+      <h1>My Fovorite Recipe</h1>
     </header>
-    <main></main>
+    <main>
+      <div>
+        <div class="toc">
+          <h2>Table of Contents</h2>
+          <ul>
+            <li><a href="#jollof_rice">Nigeria Jollof Rice</a></li>
+            <li><a href="#spaghetti">Spaghetti Bolognese</a></li>
+            <li><a href="#chicken">Grilled Chicken Salad</a></li>
+            <li>Moimoi (Steamed Bean Pudding)</li>
+            <li>Vegetable Soup (Nigerian Style)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div id="jollof_rice" class="recipe">
+          <h2>Nigeria Jollof Rice</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rice</td>
+                <td>2 cups</td>
+              </tr>
+              <tr>
+                <td>Carrots (diced)</td>
+                <td>1/2 cup</td>
+              </tr>
+              <tr>
+                <td>Green peas</td>
+                <td>1/2 cup</td>
+              </tr>
+              <tr>
+                <td>Green beans (chopped)</td>
+                <td>1/2 cup</td>
+              </tr>
+              <tr>
+                <td>Sweet corn</td>
+                <td>1/4 cup</td>
+              </tr>
+              <tr>
+                <td>Bell peppers (diced)</td>
+                <td>1/2 cup</td>
+              </tr>
+              <tr>
+                <td>Chicken broth</td>
+                <td>1/2 cup</td>
+              </tr>
+              <tr>
+                <td>Oil</td>
+                <td>2 tbsp</td>
+              </tr>
+              <tr>
+                <td>Onion (chopped)</td>
+                <td>1 small</td>
+              </tr>
+              <tr>
+                <td>Garlic (minced)</td>
+                <td>2 cloves</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td>To taste</td>
+              </tr>
+              <tr>
+                <td>Curry powder</td>
+                <td>1 tsp</td>
+              </tr>
+              <tr>
+                <td>Thyme</td>
+                <td>1/2 tsp</td>
+              </tr>
+              <tr>
+                <td>Seasoning cubes</td>
+                <td>2-3</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Instructions:</h3>
+          <ol>
+            <li>
+              Wash and parboil the rice for about 10 minutes, then drain and set
+              aside.
+            </li>
+            <li>
+              In a pot, add oil and sauté onions and garlic until fragrant.
+            </li>
+            <li>
+              Add diced carrots, green peas, green beans, and bell peppers.
+              Stir-fry for 2–3 minutes.
+            </li>
+            <li>
+              Add the parboiled rice, curry powder, thyme, salt, and seasoning
+              cubes.
+            </li>
+            <li>
+              Pour in the chicken broth, cover, and let it cook on low heat for
+              about 15–20 minutes.
+            </li>
+            <li>
+              Once the rice is cooked, add sweet corn and stir to combine. Serve
+              hot.
+            </li>
+          </ol>
+
+          <div class="top_link"><a href="#top">Back to top</a></div>
+        </div>
+      </div>
+      <div id="spaghetti" class="recipe">
+        <h2>Spaghetti Bolognese</h2>
+        <table>
+          <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td>Spaghetti</td>
+            <td>400g</td>
+          </tr>
+          <tr>
+            <td>Ground beef</td>
+            <td>500g</td>
+          </tr>
+          <tr>
+            <td>Onion (chopped)</td>
+            <td>1 large</td>
+          </tr>
+          <tr>
+            <td>Garlic (minced)</td>
+            <td>2 cloves</td>
+          </tr>
+          <tr>
+            <td>Carrot (diced)</td>
+            <td>1 medium</td>
+          </tr>
+          <tr>
+            <td>Celery (diced)</td>
+            <td>1 stalk</td>
+          </tr>
+          <tr>
+            <td>Tomatoes (blended)</td>
+            <td>4 large</td>
+          </tr>
+          <tr>
+            <td>Tomato paste</td>
+            <td>2 tbsp</td>
+          </tr>
+          <tr>
+            <td>Olive oil</td>
+            <td>2 tbsp</td>
+          </tr>
+          <tr>
+            <td>Beef or vegetable broth</td>
+            <td>1 cup</td>
+          </tr>
+          <tr>
+            <td>Italian seasoning</td>
+            <td>1 tsp</td>
+          </tr>
+          <tr>
+            <td>Salt</td>
+            <td>To taste</td>
+          </tr>
+          <tr>
+            <td>Black pepper</td>
+            <td>To taste</td>
+          </tr>
+        </table>
+        <h3>Instructions:</h3>
+        <ol>
+          <li>
+            Cook the spaghetti according to package instructions until al dente.
+            Drain and set aside.
+          </li>
+          <li>
+            In a large pan, heat the olive oil over medium heat. Add chopped
+            onion and garlic, and sauté until softened and fragrant.
+          </li>
+          <li>
+            Add the ground beef, breaking it up with a spoon. Cook until
+            browned, then drain any excess fat.
+          </li>
+          <li>
+            Add the diced carrot and celery, stirring for 2–3 minutes until
+            slightly softened.
+          </li>
+          <li>
+            Stir in the tomato paste, blended tomatoes, and broth. Season with
+            Italian seasoning, salt, and black pepper.
+          </li>
+          <li>
+            Reduce heat and let the sauce simmer for 20–30 minutes, stirring
+            occasionally, until it thickens.
+          </li>
+          <li>Serve the sauce over the spaghetti and enjoy.</li>
+        </ol>
+        <div class="top_link"><a href="#top">Back to top</a></div>
+      </div>
+      <div id="chicken" class="recipe">
+        <h2>Grilled Chicken Salad</h2>
+        <table>
+          <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td>Chicken breast</td>
+            <td>2 fillets</td>
+          </tr>
+          <tr>
+            <td>Olive oil</td>
+            <td>2 tbsp</td>
+          </tr>
+          <tr>
+            <td>Salt</td>
+            <td>To taste</td>
+          </tr>
+          <tr>
+            <td>Black pepper</td>
+            <td>To taste</td>
+          </tr>
+          <tr>
+            <td>Mixed salad greens</td>
+            <td>4 cups</td>
+          </tr>
+          <tr>
+            <td>Cherry tomatoes (halved)</td>
+            <td>1 cup</td>
+          </tr>
+          <tr>
+            <td>Cucumber (sliced)</td>
+            <td>1 medium</td>
+          </tr>
+          <tr>
+            <td>Red onion (thinly sliced)</td>
+            <td>1/4 medium</td>
+          </tr>
+          <tr>
+            <td>Avocado (sliced)</td>
+            <td>1 large</td>
+          </tr>
+          <tr>
+            <td>Feta cheese (crumbled)</td>
+            <td>1/4 cup</td>
+          </tr>
+          <tr>
+            <td>Balsamic vinaigrette or dressing of choice</td>
+            <td>As desired</td>
+          </tr>
+        </table>
+        <h3>Instructions:</h3>
+        <ol>
+          <li>Preheat a grill or grill pan to medium-high heat.</li>
+          <li>
+            Rub the chicken breasts with olive oil, salt, and black pepper.
+          </li>
+          <li>
+            Grill the chicken for 5–6 minutes on each side or until fully
+            cooked. Let it rest for a few minutes, then slice thinly.
+          </li>
+          <li>
+            In a large bowl, combine salad greens, cherry tomatoes, cucumber,
+            red onion, and avocado.
+          </li>
+          <li>
+            Add the grilled chicken slices on top of the salad and sprinkle with
+            crumbled feta cheese.
+          </li>
+          <li>
+            Drizzle with balsamic vinaigrette or your favorite dressing, toss
+            gently, and serve immediately.
+          </li>
+        </ol>
+        <div class="top_link"><a href="#top">Back to top</a></div>
+      </div>
+    </main>
   </body>
 </html>
