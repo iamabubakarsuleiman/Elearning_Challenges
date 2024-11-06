@@ -21,23 +21,33 @@
         padding: 20px;
         border-radius: 8px;
       }
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-      .toc {
+      /* Menu styling */
+      .menu {
         background-color: rgb(245, 225, 210);
         padding: 10px;
         margin: 20px 0;
         border-radius: 8px;
       }
-      .toc a {
+      .menu h2 {
+        text-align: center;
+      }
+      .menu ul {
+        list-style-type: none;
+      }
+      .menu a {
         color: #f28e1c;
         text-decoration: none;
         font-weight: bold;
       }
-
+      /* Image styling */
+      img {
+        width: 250px;
+      }
       /* Table Styling */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
       th {
         background-color: rgb(242, 142, 38);
         color: rgb(255, 255, 255);
@@ -71,18 +81,51 @@
     </header>
     <main>
       <div>
-        <div class="toc">
-          <h2>Table of Contents</h2>
+        <div class="menu">
+          <h2>MENU</h2>
           <ul>
             <li><a href="#jollof_rice">Nigeria Jollof Rice</a></li>
             <li><a href="#spaghetti">Spaghetti Bolognese</a></li>
             <li><a href="#chicken">Grilled Chicken Salad</a></li>
-            <li>Moimoi (Steamed Bean Pudding)</li>
-            <li>Vegetable Soup (Nigerian Style)</li>
+            <li><a href="#moimoi">Moimoi (Steamed Bean Pudding)</a></li>
+            <li>
+              <a href="#vegetable_soup">Vegetable Soup (Nigerian Style)</a>
+            </li>
           </ul>
         </div>
       </div>
-
+      <div class="image_recipe">
+        <a href="#jollof_rice">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Jollof_Rice_with_Stew.jpg"
+            alt="A plate of jollof rice"
+          />
+        </a>
+        <a href="#spaghetti">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1674511582428-58ce834ce172?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="A plate of spaghetti Bolognese"
+          />
+        </a>
+        <a href="#chicken">
+          <img
+            src="https://images.unsplash.com/photo-1600555379765-f82335a7b1b0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="A plate of fried chicken"
+          />
+        </a>
+        <a href="#moimoi">
+          <img
+            src="https://explorekitchen.com/wp-content/uploads/2024/10/Untitled-design-30.png"
+            alt="A plate of Moimoi"
+          />
+        </a>
+        <a href="#vegetable_soup">
+          <img
+            src="https://eatwellabi.com/wp-content/uploads/2023/02/sukuma-wiki-16.jpg"
+            alt="A plate of vegetable Soup"
+          />
+        </a>
+      </div>
       <div>
         <div id="jollof_rice" class="recipe">
           <h2>Nigeria Jollof Rice</h2>
@@ -345,6 +388,139 @@
           <li>
             Drizzle with balsamic vinaigrette or your favorite dressing, toss
             gently, and serve immediately.
+          </li>
+        </ol>
+        <div class="top_link"><a href="#top">Back to top</a></div>
+      </div>
+      <div id="moimoi" class="recipe">
+        <h2>Moimoi (Steamed Bean Pudding)</h2>
+        <table>
+          <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td>Black-eyed beans</td>
+            <td>2 cups</td>
+          </tr>
+          <tr>
+            <td>Red bell pepper</td>
+            <td>1 large</td>
+          </tr>
+          <tr>
+            <td>Onion</td>
+            <td>1 large</td>
+          </tr>
+          <tr>
+            <td>Ground crayfish</td>
+            <td>1 tbsp</td>
+          </tr>
+          <tr>
+            <td>Salt</td>
+            <td>To taste</td>
+          </tr>
+          <tr>
+            <td>Seasoning cubes</td>
+            <td>1-2</td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td>As needed</td>
+          </tr>
+        </table>
+
+        <h3>Instructions:</h3>
+        <ol>
+          <li>
+            Soak the beans in water for a few hours, then remove the skins and
+            blend with bell pepper and onion to form a smooth paste.
+          </li>
+          <li>
+            Rub the chicken breasts with olive oil, salt, and black pepper.
+          </li>
+          <li>
+            In a bowl, mix the bean paste with oil, crayfish, salt, and
+            seasoning cubes. Add water gradually to reach a medium-thick
+            consistency.
+          </li>
+          <li>
+            Pour the mixture into small containers or leaves and steam in a pot
+            with water for about 45 minutes to 1 hour, or until firm.
+          </li>
+          <li>Serve as a side dish or enjoy on its own.</li>
+        </ol>
+        <div class="top_link"><a href="#top">Back to top</a></div>
+      </div>
+      <div id="vegetable_soup" class="recipe">
+        <h2>Vegetable Soup (Nigerian Style)</h2>
+        <table>
+          <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td>Assorted meat</td>
+            <td>500g</td>
+          </tr>
+          <tr>
+            <td>Spinach or Ugu leaves</td>
+            <td>3 cups (chopped)</td>
+          </tr>
+          <tr>
+            <td>Onion</td>
+            <td>1 large</td>
+          </tr>
+          <tr>
+            <td>Palm oil</td>
+            <td>1/4 cup</td>
+          </tr>
+          <tr>
+            <td>Salt</td>
+            <td>To taste</td>
+          </tr>
+          <tr>
+            <td>Pepper (ground)</td>
+            <td>To taste</td>
+          </tr>
+          <tr>
+            <td>Ground crayfish</td>
+            <td>1 tbsp</td>
+          </tr>
+          <tr>
+            <td>Smenukfish</td>
+            <td>100g</td>
+          </tr>
+          <tr>
+            <td>Seasoning cubes</td>
+            <td>1-2</td>
+          </tr>
+          <tr>
+            <td>Water</td>
+            <td>As needed</td>
+          </tr>
+        </table>
+
+        <h3>Instructions:</h3>
+        <ol>
+          <li>
+            Boil the assorted meat and smenukfish with onions, salt, and
+            seasoning cubes until tender.
+          </li>
+          <li>
+            In a pot, heat the palm oil and add the ground crayfish and pepper.
+            Stir well.
+          </li>
+          <li>
+            Add the cooked meat and smenuk, then pour in the chopped spinach or
+            Ugu leaves.
+          </li>
+          <li>
+            Stir well and let it cook for about 5–10 minutes, until the
+            vegetables are softened but still vibrant.
+          </li>
+          <li>
+            Adjust seasoning if needed, and serve with a side of rice, yam, or
+            fufu.
           </li>
         </ol>
         <div class="top_link"><a href="#top">Back to top</a></div>
