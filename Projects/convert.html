@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convert Fahrenheit to Celsius</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        #result {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
     <h1>Fahrenheit to Celsius Converter</h1>
@@ -14,8 +32,11 @@
 
     <script>
         function toConvert() {
+             // Get the input value and assign it to a variable farhrenheit
            var fahrenheit = document.getElementById('fahrenheit').value;
+            // Convert to Celsius and assign to varible celsius
             var celsius = 5/9 * (fahrenheit - 35);
+             // Display the result
             document.getElementById("result").textContent =
             fahrenheit + "°F is " + celsius.toFixed(2) +"°C";
         }
