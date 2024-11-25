@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator</title>
+    <style>
+      body {
+        background: #b5f6f7;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.6rem;
+        margin: 2rem;
+      }
+      h1 {
+        text-align: center;
+      }
+      select,
+      #grade {
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      #submit {
+        background-color: #72de14;
+        color: aliceblue;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      #Grade {
+        text-align: center;
+      }
+      #result {
+        margin-top: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Grade Calculator</h1>
+    <div id="Grade">
+      <label for="subject">Subject</label>
+      <select name="subject" id="subject">
+        <option value="Mathematics">Mathematics</option>
+        <option value="English">English</option>
+        <option value="Physics">Physics</option>
+        <option value="Biology">Biology</option>
+        <option value="Chemistry">Chemistry</option>
+      </select>
+      <label for="grade">Mark</label>
+      <input type="number" id="grade" min="0" max="100" />
+      <button type="submit" id="submit" onclick=" submitGrade()">Submit</button>
+      <div id="result"></div>
+    </div>
+    <script>
+      function submitGrade() {
+        let subject = document.getElementById("subject").value;
+        let selectGrade = document.getElementById("grade").value;
+        if (selectGrade >= 101) {
+          document.getElementById("result").innerHTML =
+            "Your " + subject + " Score can't be morethan 100";
+        } else if (selectGrade >= 70) {
+          document.getElementById("result").innerHTML =
+            "Your " + subject + " Grade is A";
+        } else if (selectGrade >= 61) {
+          document.getElementById("result").innerHTML =
+            "Your " + subject + " Grade is B";
+        } else if (selectGrade >= 50) {
+          document.getElementById("result").innerHTML =
+            "Your " + subject + " Grade is C";
+        } else if (selectGrade >= 41) {
+          document.getElementById("result").innerHTML =
+            "Your " + subject + " Grade is D";
+        } else if (selectGrade >= 0) {
+          document.getElementById("result").innerHTML =
+            "Your " + subject + " Grade is F";
+        } else {
+          document.getElementById("result").innerHTML =
+            "Your " + subject + " Score is Invalid";
+        }
+      }
+    </script>
+  </body>
+</html>
