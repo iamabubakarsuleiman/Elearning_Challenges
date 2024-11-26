@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cars Listing</title>
+    <style>
+      body {
+        background: #b5f6f7;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.6rem;
+        margin: 2rem;
+      }
+      #welcome {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="welcome">JavaScript Array</h1>
+    <p id="carList">
+      <span id="firstItem"></span> <br />
+      <span id="lastItem"></span> <br />
+      <span id="newElement"></span><br />
+      <span id="cars"></span>
+    </p>
+    <script>
+      const cars = ["Toyota", "Honda", "Mazda", "mitsubishi", "tesla", "lexus"];
+      console.log(cars[0]);
+      console.log(cars[cars.length - 1]);
+      console.log((cars[6] = "mercedes-benz"));
+      for (let i = 0; i < cars.length; i++) {
+        console.log(cars[i]);
+      }
+      /*const cars = ["Toyota", "Honda", "Mazda", "Mitsubishi", "Tesla", "Lexus"];
+      document.getElementById("firstItem").innerHTML = cars[0];
+      document.getElementById("lastItem").innerHTML = cars[cars.length - 1];
+      document.getElementById("newElement").innerHTML = cars[6] =
+        "mercedes - benz";
+      let text = "  ";
+      for (let i = 0; i < cars.length; i++) {
+        document.getElementById("cars").innerHTML = text += cars[i] + "<br>";
+      }*/
+    </script>
+  </body>
+</html>
