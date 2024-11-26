@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change background-color</title>
+    <style>
+      body {
+        background-color: goldenrod;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        margin: 1rem;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      p {
+        text-align: center;
+      }
+      #myButton {
+        padding: 5px;
+        font-size: 20px;
+        background: green;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Let Change the background-color</h1>
+    <p>
+      click this
+      <button type="button" id="myButton" onclick="backgroundColor()">
+        Button
+      </button>
+      to Change the background color
+    </p>
+    <script>
+      function backgroundColor() {
+        document.body.style.background = "blue";
+      }
+    </script>
+  </body>
+</html>
