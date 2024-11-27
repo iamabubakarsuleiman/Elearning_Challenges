@@ -33,14 +33,21 @@
         console.log(cars[i]);
       }
       // output on webpage
-      const cars = ["Toyota", "Honda", "Mazda", "Mitsubishi", "Tesla", "Lexus"];
-      document.getElementById("firstItem").innerHTML = cars[0];
-      document.getElementById("lastItem").innerHTML = cars[cars.length - 1];
-      document.getElementById("newElement").innerHTML = cars[6] =
+      const myCars = [
+        "Toyota",
+        "Honda",
+        "Mazda",
+        "Mitsubishi",
+        "Tesla",
+        "Lexus",
+      ];
+      document.getElementById("firstItem").innerHTML = myCars[0];
+      document.getElementById("lastItem").innerHTML = myCars[myCars.length - 1];
+      document.getElementById("newElement").innerHTML = myCars[6] =
         "mercedes - benz";
       let text = "  ";
-      for (let i = 0; i < cars.length; i++) {
-        document.getElementById("cars").innerHTML = text += cars[i] + "<br>";
+      for (let i = 0; i < myCars.length; i++) {
+        document.getElementById("cars").innerHTML = text += myCars[i] + "<br>";
       }
     </script>
   </body>
